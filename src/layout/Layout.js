@@ -1,11 +1,14 @@
 import React from 'react'
-import Header from '../components/Header/Header'
+import HeaderMain from '../components/Header/HeaderMain'
+import HeaderSecondary from '../components/Header/HeaderSecondary'
+import classes from '../styles/Layout.module.css'
 
 const Layout = ({children}) => {
     return ( 
         <div>
-            <Header />
-            <main>{children}</main>
+            <HeaderMain />
+            <HeaderSecondary />
+            <main className={classes.contentWrapper}>{children}</main>
         </div>
      );
 }
