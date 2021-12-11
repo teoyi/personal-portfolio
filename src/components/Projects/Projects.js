@@ -1,10 +1,12 @@
+import classes from '../../styles/Projects.module.css'
+
 const Projects = () => {
     return ( 
-        <div>
-            <h3>Project 1</h3>
-            <h3>Project 2</h3>
-            <h3>Project 3</h3>
-            <h3>Project 4</h3>
+        <div id="projects">
+            <section className={classes.projects}>Project 1</section>
+            <section className={classes.projects}>Project 2</section>
+            <section className={classes.projects}>Project 3</section>
+            <section className={classes.projects}>Project 4</section>
         </div>
         
     );

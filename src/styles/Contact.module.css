@@ -1,3 +1,20 @@
+.contact { 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{}
+
+.email { 
+    color: #86cecb;
+    font-weight: bold;
+}
+
+
+
 .removeMargin{ 
     margin: 0;
 }
