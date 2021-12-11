@@ -1,13 +1,14 @@
 import React from 'react'
-
+import classes from '../../styles/Landing.module.css'
 
 const Landing = () => {
     return ( 
-        <div>
-            <h2>YiPeng (Luke) Teo</h2>
-            <h1><strong>Belong to Ayano Suzuki</strong></h1>
-            <p>Aspiring web/software developer</p>
-        </div>
+        <section className={classes.landing} id="landing">
+            <div className={classes.landingWrapper}>
+                <h2 className={classes.name}>YiPeng <span className={classes.luke}>&lt;Luke&gt;</span> Teo</h2>
+                <p className={classes.subtitle}>Aspiring web/software developer</p>
+            </div>
+        </section>
     );
 }
  

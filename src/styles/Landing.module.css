@@ -1,0 +1,41 @@
+.landing{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: 4.5vw;
+    font-family: 'Neuton', serif;
+    height: 100vh;
+}
+
+.luke{
+    color:#86cecb;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0.07em 0 rgba(255, 40, 133, 0.75);
+}
+
+.layer1{ 
+    position: absolute;
+}
+
+.layer2{
+    position: absolute;
+}
+
+.layer3{
+    position: absolute;
+}
+
+.fullName{
+    margin-left:254px;
+}
+
+.name{
+    margin:0;
+}
+
+.subtitle{
+    margin:0;
+    font-size: 3.5vw;
+}
