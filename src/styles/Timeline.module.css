@@ -6,7 +6,53 @@
     height: 100vh;
 }
 
+.title{
+    font-size: 1.7vw;
+}
+
 .skillsWrapper{
     display: flex;
     flex-direction: row;
 }
+
+.milestone{ 
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.milestone ol{
+    font-size:0;
+    width: 51vw;
+    padding: 50px 0;
+    transition: all 1s;
+}
+
+.milestone ol li {
+    position: relative; 
+    display: inline-block;
+    list-style-type: none; 
+    width: 58vw;
+    height: 3px;
+    background: #fff;
+}
+
+.milestone ol li:last-child{
+    width: 0vw;
+}
+
+.milestone ol li:not(:first-child) {
+    margin-left: 14px;
+}
+
+.milestone ol li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 1px);
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #F45B69;
+  }
