@@ -8,23 +8,15 @@
     height: 100vh;
 }
 
+.landingWrapper {
+    text-align: center;
+}
+
 .luke{
     color:#86cecb;
     text-transform: uppercase;
     position: relative;
     text-shadow: 0.05em 0.07em 0 rgba(255, 40, 133, 0.75);
-}
-
-.layer1{ 
-    position: absolute;
-}
-
-.layer2{
-    position: absolute;
-}
-
-.layer3{
-    position: absolute;
 }
 
 .fullName{
@@ -37,5 +29,6 @@
 
 .subtitle{
     margin:0;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', serif;
 }
