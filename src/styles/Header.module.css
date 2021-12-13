@@ -15,7 +15,7 @@
     color: #86cecb;
     /* margin: 1.5rem 1.5rem; */
     cursor: pointer;
-    margin-left: 5.5vw;
+    margin-left: 9vw;
     margin-top: 4px;
 }
 
@@ -62,7 +62,7 @@
 
 /* Hamburger flipping */
 .hamburger{
-    margin-right: 4vw;
+    margin-right: 8vw;
 }
 
 /* Social navbar in desktop mode */
