@@ -4,27 +4,70 @@
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
-    width: 100%
-}
-
-.navBar__right{
-    display: flex;
-}
-
-.navLink {
-    margin: 1.5rem 1.5rem;
-    color: #86cecb;
-    font-family:
+    width: 100%;
+    z-index: 100;
+    height: 12vh;
+    background-color: #373b3e;
+    align-items: center;
 }
 
 .navBar__left{
     color: #86cecb;
-    margin: 1.5rem 1.5rem;
+    /* margin: 1.5rem 1.5rem; */
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    margin-left: 5.5vw;
+    margin-top: 4px;
 }
 
+/* .navBar__right{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Menu styles */
+.navLink {
+    /* margin: 1.5rem 1.5rem; */
+    color: #86cecb;
+    font-family: 'deterMono';
+}
+
+.menuNav {
+    /* display: none !important; */
+    list-style-type: none !important;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: #373b3e;
+    height: 90vh;
+    top: 12vh;
+    right:0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+
+}
+
+.showMenu { 
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+
+.menuNav li {
+    width: 100%;
+    text-align: center
+}
+
+
+/* Hamburger flipping */
+.hamburger{
+    margin-right: 4vw;
+}
+
+/* Social navbar in desktop mode */
 .navBar__secondary{
+    display: none !important;
     position: fixed;
     left:0;
     bottom: 0;
@@ -33,8 +76,6 @@
     margin: 0rem 1rem;
     width: 50px;
 }
-
-
 
 .navSocials {
     margin: 0.5rem 0rem;

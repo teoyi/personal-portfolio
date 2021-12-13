@@ -23,4 +23,16 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "deterMono";
+  src: url("../../public/fonts/DeterminationMonoWeb.woff");
+}
+
+@font-face {
+  font-family: "deterSans";
+  src: url("../..//public/fonts/DeterminationSansWeb.woff");
 }

@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    font-size: 4.5vw;
-    font-family: 'Neuton', serif;
+    font-family: "deterMono";
     height: 100vh;
 }
 
@@ -16,19 +15,35 @@
     color:#86cecb;
     text-transform: uppercase;
     position: relative;
+    font-size: 25vw;
+    margin: 0;
     text-shadow: 0.05em 0.07em 0 rgba(255, 40, 133, 0.75);
-}
-
-.fullName{
-    margin-left:254px;
 }
 
 .name{
     margin:0;
+    font-size: 2.5rem;
+    position: absolute;
+    left: 50%;
 }
 
 .subtitle{
     margin:0;
-    font-size: 2.5vw;
-    font-family: 'Open Sans', serif;
+    font-size: 4.5vw;
+    font-family: "deterSans";
+}
+
+.navBar__secondary{
+    position: absolute;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 45vh;
+    width: 50%;
+}
+
+.navSocials {
+    margin: 0.5rem 0rem;
+    color: #86cecb;
 }

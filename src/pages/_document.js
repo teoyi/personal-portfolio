@@ -10,8 +10,20 @@ export default class MyDocument extends Document {
                     <meta name="description" content="Portfolio website for YiPeng (Luke) Teo." />
                     <meta name="author" content="YiPeng (Luke) Teo" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
                     <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Open+Sans&display=swap" rel="stylesheet" />
+                    <link
+                        rel="preload"
+                        href="/public/fonts/DeterminationMonoWeb.woff"
+                        as="font"
+                        crossOrigin=""
+                    />
+                    <link
+                        rel="preload"
+                        href="/public/fonts/DeterminationSansWeb.woff"
+                        as="font"
+                        crossOrigin=""
+                    />
                 </Head>
                 <body>
                     <Main />
