@@ -4,7 +4,7 @@ import classes from '../../styles/About.module.css'
 
 const About = () => {
     return ( 
-        <div className={classes.about} id="about">
+        <section className={classes.about} id="about">
             <h2 className={classes.greetings}>Hello there!</h2>
             <div className={classes.imageWrapper}>
                 <div className={classes.aboutImage}>
@@ -19,7 +19,7 @@ const About = () => {
                     I am a self-taught developer that has since been involved in projects in both personal and professional setting. Action speaks louder than words, so I will let this website speak on behalf my skills.
                 </p>
             </div>
-        </div>
+        </section>
         
     );
 }

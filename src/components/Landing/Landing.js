@@ -11,9 +11,9 @@ const Landing = () => {
                 <p className={classes.subtitle}>Aspiring web/software developer</p>
             </div>
             <div className={classes.navBar__secondary}>
-                <a href="#" className={classes.navSocials}><FaInstagramSquare size="2.2rem" /></a>
-                <a href="#" className={classes.navSocials}><FaGithubSquare size="2.2rem" /></a>
-                <a href='#' className={classes.navSocials}><FaLinkedin size="2.2rem" /></a>
+                <a href="https://www.instagram.com/yipeng_/" className={classes.navSocials}><FaInstagramSquare size="2.2rem" /></a>
+                <a href="https://github.com/teoyi" className={classes.navSocials}><FaGithubSquare size="2.2rem" /></a>
+                <a href='https://www.linkedin.com/in/luketeo/' className={classes.navSocials}><FaLinkedin size="2.2rem" /></a>
             </div>
         </section>
     );

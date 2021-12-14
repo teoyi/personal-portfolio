@@ -2,15 +2,15 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    height: 200vh;
+    /* height: 200vh; */
 }
 .timelineWrapper{
     margin-top: 100px;
 }
 
 .title{
-    font-size: 2.7vw;
-    font-family: 'Open Sans', serif;
+    font-size: 10vw;
+    font-family: 'determono', serif;
     text-align: center; 
 }
 
@@ -25,32 +25,39 @@
     text-decoration: underline;
 }
 
+
+/* Button styling */
 .buttonWrap{ 
     margin-top: 20px;
+    margin-left: 9vw;
     display: flex; 
-    flex-direction: row; 
+    flex-direction: column; 
     /* justify-content: space-around; */
-    align-items: center;
+    align-items: flex-start;
 
 }
 
 .buttonmain{
     background-color:#e12885;
-    padding: 0.5rem 0.5rem;
+    padding: 7px 10px;
     border-radius: 10px;
+    margin: 7px 0;
     /* margin: 1rem 2rem; */
 }
 
 .buttonalt{ 
     background-color: #137a7f;
-    padding: 0.5rem 0.5rem; 
+    padding: 7px 10px;
     border-radius: 10px;
+    margin: 7px 0;
     /* margin: 1rem 2rem; */
 }
 
+/* timeline */
 .timeline{
     position:relative;
-    margin:50px auto;
+    /* margin:50px auto; */
+    margin: 10px auto;
     padding:40px 0;
     width:150vh;
     box-sizing:border-box;
@@ -59,9 +66,10 @@
 .timeline:before{
     content:'';
     position:absolute;
-    left:50%;
+    /* left:50%; */
+    margin-left: 15vw;
     width:2px;
-    height:150vh;
+    height:1008px;
     background:#c5c5c5;
 }
 
@@ -73,12 +81,13 @@
 .timeline ul li{
     list-style:none;
     position:relative;
-    width:50%;
+    /* width: 50%; */
+    width:100%;
     padding:20px 40px;
     box-sizing:border-box;
 }
 
-.timeline ul li:nth-child(odd){
+/* .timeline ul li:nth-child(odd){
     float:left;
     text-align:right;
     clear:both;
@@ -88,18 +97,23 @@
     float:right;
     text-align:left;
     clear:both;
-}
+} */
 
 .content{
-    font-family: 'Open Sans', serif;
-    padding-bottom:20px;
+    font-family: 'determono', serif;
+    /* padding-bottom:20px; */
 }
 
 .content h3 { 
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 10vw;
+    margin-left:9vw !important;
 }
 
+.content p {
+    font-size: 5vw;
+    margin-left: 9vw !important;
+}
 
 .timeline ul li:nth-child(odd):before
 {
@@ -107,8 +121,10 @@
     position:absolute;
     width:10px;
     height:10px;
-    top:24px;
-    right:-6px;
+    /* top:24px; */
+    top: 33px;
+    /* right:-6px; */
+    left: 14vw;
     background:#e12885;
     border-radius:50%;
     box-shadow:0 0 0 3px rgba(233,33,99,0.2);
@@ -120,8 +136,10 @@
     position:absolute;
     width:10px;
     height:10px;
-    top:24px;
-    left:-4px;
+    /* top:24px; */
+    top: 38px;
+    /* left:-4px; */
+    left: 14vw;
     background:#e12885;
     border-radius:50%;
     box-shadow:0 0 0 3px rgba(233,33,99,0.2);
