@@ -1,6 +1,38 @@
 .projects{
     display:flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.construction{
+    margin: 20vw 0;
+}
+
+.underConstructWrap{
+    display:flex;
+    justify-content: center;
+}
+
+.underConstruct{
+    width: 40vh;
+    height: auto;
+}
+
+.mainTitle{
+    font-family: 'deterMono';
+    text-align: center;
+    font-size: 13vw;
+}
+
+.title{
+    font-family: 'deterMono';
+    text-align: center;
+}
+
+.subtitle{
+    font-family: 'deterMono';
+    margin: 0 10vw;
+    text-align: center;
 }
