@@ -23,16 +23,18 @@
 .mainTitle{
     font-family: 'deterMono';
     text-align: center;
-    font-size: 13vw;
+    font-size: 10vw;
 }
 
 .title{
     font-family: 'deterMono';
+    font-size: 6vw;
     text-align: center;
 }
 
 .subtitle{
     font-family: 'deterMono';
     margin: 0 10vw;
+    font-size: 5vw;
     text-align: center;
 }
