@@ -1,10 +1,15 @@
 .about{
     display:flex; 
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
-    /* align-items: center; */
+    align-items: center;
     height: 100vh;
     font-family: 'determono', serif;
+}
+.contentWrapper{    
+    display:flex; 
+    flex-direction:column;
+    justify-content: center;
 }
 
 .greetings {
@@ -19,12 +24,14 @@
     align-items: center;
     width: 100%;
 }
+
 .aboutImage{
     /* force height and width to be the same */
     height: 25vh;
     width: 25vh; 
     margin: 15px 0;
     border-radius: 50%;
+    position: relative;
     /* border: solid 1px red !important; */
     overflow: hidden;
 }
@@ -50,4 +57,113 @@
     color: #e12885;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.imageWrapperDesktop{
+    display:none;
+}
+
+.aboutImageDesktop{
+    height: 360px;
+    width: 325px;
+    margin-right: 5vw;
+    position: relative;
+    /* border: solid 2px red; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* IPad, Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .subtitle{
+        line-height: 35px;
+    }
+    .aboutImage{
+        margin: 20px 0;
+    }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .imageWrapper{
+        display: none; 
+    }
+    .imageWrapperDesktop{
+        display: block;
+    }
+    .greetings{
+        font-size: 2vw;
+    }
+    .subtitle{ 
+        font-size: 2vw;
+    }
+    .about{
+        margin: 0 10vw;
+    }
+    .greetings{
+        margin: 0 5vw;
+        text-align: left;
+        font-size: 4vw;
+    }
+    .subtitle{ 
+        margin: 20px 5vw;
+        line-height: 25px;
+    }
+}
+
+/* Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .imageWrapper{
+        display: none; 
+    }
+    .imageWrapperDesktop{
+        display: block;
+    }
+    .greetings{
+        font-size: 2vw;
+    }
+    .subtitle{ 
+        font-size: 2vw;
+    }
+    .about{
+        margin: 0 10vw;
+    }
+    .greetings{
+        margin: 0 5vw;
+        text-align: left;
+        font-size: 4vw;
+    }
+    .subtitle{ 
+        margin: 20px 5vw;
+        line-height: 30px;
+    }
+}
+
+/* Extra large */
+@media only screen and (min-width: 1201px){
+    .imageWrapper{
+        display: none; 
+    }
+    .imageWrapperDesktop{
+        display: block;
+    }
+    .greetings{
+        font-size: 2vw;
+    }
+    .subtitle{ 
+        font-size: 2vw;
+    }
+    .about{
+        margin: 0 10vw;
+    }
+    .greetings{
+        margin: 0 5vw;
+        text-align: left;
+        font-size: 4vw;
+    }
+    .subtitle{ 
+        margin: 20px 5vw;
+        line-height: 35px;
+    }
 }
