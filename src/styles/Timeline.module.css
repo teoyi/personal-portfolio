@@ -156,7 +156,8 @@
 
     .timeline:before{
         margin-left: 14.5vw;
-        height: 1030px;
+        max-height: 1075px;
+        height:183vw;
     }
 
     .content h3 { 
@@ -190,7 +191,8 @@
 
     .timeline:before{
         margin-left: 0;
-        height: 1172px;
+        max-height: 1172px;
+        height: 135vw;
         left: 50%;
     }
 
@@ -249,7 +251,7 @@
 
     .timeline:before{
         margin-left: 0;
-        height: 1172px;
+        height: 116vw;
         left: 50%;
     }
 
@@ -308,7 +310,7 @@
 
     .timeline:before{
         margin-left: 0;
-        height: 1276px;
+        height: 101vw;
         left: 50%;
     }
 
