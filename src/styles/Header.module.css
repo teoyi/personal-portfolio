@@ -16,13 +16,16 @@
     /* margin: 1.5rem 1.5rem; */
     cursor: pointer;
     margin-left: 9vw;
-    margin-top: 4px;
+    /* margin-top: 4px; */
+    /* border: solid 1px red; */
+    position: relative;
+    font-family: 'deterSans';
+    font-size: 8.5vw;
 }
 
-/* .navBar__right{
-    display: flex;
-    flex-direction: column;
-} */
+.navBar__right{
+    display:none;
+}
 
 /* Menu styles */
 .navLink {
@@ -80,4 +83,104 @@
 .navSocials {
     margin: 0.5rem 0rem;
     color: #86cecb;
+}
+
+/* IPad, Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .navBar__left{
+        font-size: 4vw;
+    }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .navBar__left{
+        margin-left: 5vw;
+        font-size: 3vw;
+    }
+    .navBar__right_mobile{
+        display:none;
+    }
+    .navBar__right{
+        display:block;
+        margin-right: 3vw;
+    }
+    .menuNav_main {
+        /* margin: 1.5rem 1.5rem; */
+        color: #86cecb;
+        font-family: 'deterMono';
+    }
+    .menuNav_main li{
+        font-size: 1.5vw;
+        display:inline;
+        margin: 0 3vw;
+    }
+    .navBar__left{
+        margin-top:0;
+    }
+    .navBar__main{
+        padding: 10px 0;
+    }
+}
+
+/* Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .navBar__left{
+        margin-left: 5vw;
+        font-size: 2.5vw;
+    }
+    .navBar__right_mobile{
+        display:none;
+    }
+    .navBar__right{
+        display:block;
+        margin-right: 3vw;
+    }
+    .menuNav_main {
+        /* margin: 1.5rem 1.5rem; */
+        color: #86cecb;
+        font-family: 'deterMono';
+    }
+    .menuNav_main li{
+        font-size: 1.4vw;
+        display:inline;
+        margin: 0 3vw;
+    }
+    .navBar__left{
+        margin-top:0;
+    }
+    .navBar__main{
+        padding: 10px 0;
+    }
+}
+
+/*  Extra large screens */
+@media only screen and (min-width: 1201px) {
+    .navBar__left{
+        margin-left: 5vw;
+        font-size: 2.5vw;
+    }
+    .navBar__right_mobile{
+        display:none;
+    }
+    .navBar__right{
+        display:block;
+        margin-right: 3vw;
+    }
+    .menuNav_main {
+        /* margin: 1.5rem 1.5rem; */
+        color: #86cecb;
+        font-family: 'deterMono';
+    }
+    .menuNav_main li{
+        font-size:1.2vw;
+        display:inline;
+        margin: 0 3vw;
+    }
+    .navBar__left{
+        margin-top:0;
+    }
+    .navBar__main{
+        padding: 10px 0;
+    }
 }

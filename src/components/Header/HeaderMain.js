@@ -20,9 +20,10 @@ const Header = () => {
     return (
         <nav className={classes.navBar__main}>
             <div className={classes.navBar__left}>
-                <Link href="#landing" passHref><Image onClick={handleLogo} className={classes.logo} src={logo} alt="logo" width={100} height={23}/></Link>
+                {/* <Link href="#landing" passHref><Image onClick={handleLogo} className={classes.logo} src={logo} alt="logo" layout='fill' objectFit='contain'/></Link> */}
+                <Link href="#landing"><a className={classes.logo} onClick={handleLogo}>LUKE.DEV</a></Link>
             </div>
-            <div className={classes.navBar__right}>
+            <div className={classes.navBar__right_mobile}>
                 <div  className={classes.hamburger}>
                     <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} size={23} rounded color={navbarOpen ? "#e12885": "#86cecb"} />
                 </div>
@@ -32,6 +33,15 @@ const Header = () => {
                     <li><Link href="#timeline"><a className={classes.navLink} onClick={handleToggle}>Timeline</a></Link></li>
                     <li><Link href="#projects"><a className={classes.navLink} onClick={handleToggle}>Projects</a></Link></li>
                     <li><Link href="#contact"><a className={classes.navLink} onClick={handleToggle}>Contact</a></Link></li>
+                </ul>
+            </div>
+            <div className={classes.navBar__right}>
+                <ul className={classes.menuNav_main}>
+                    <li><Link href="#landing"><a className={classes.navLink_main}>Home</a></Link></li>
+                    <li><Link href="#about"><a className={classes.navLink_main}>About</a></Link></li>
+                    <li><Link href="#timeline"><a className={classes.navLink_main}>Timeline</a></Link></li>
+                    <li><Link href="#projects"><a className={classes.navLink_main}>Projects</a></Link></li>
+                    <li><Link href="#contact"><a className={classes.navLink_main}>Contact</a></Link></li>
                 </ul>
             </div>
         </nav>

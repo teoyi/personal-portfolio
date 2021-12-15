@@ -47,3 +47,42 @@
     margin: 0.5rem 0rem;
     color: #86cecb;
 }
+
+/* IPad, Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .luke{
+        font-size: 20vw;
+    }
+    .subtitle{ 
+        margin: 1vw 0;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+    }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .luke{
+        font-size: 20vw;
+    }
+    .subtitle{ 
+        margin: 1vw 0;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+    }
+}
+
+/* Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .luke{
+        font-size: 20vw;
+    }
+    .subtitle{ 
+        margin: 1vw 0;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+    }
+}
