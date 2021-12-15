@@ -21,7 +21,7 @@ const Timeline = () => {
                                 <h3>August 2020</h3>
                                 <p>Worked on <span className={classes.highlight}><a href="#">The Odin Project</a></span></p>
                                 <p>An open source web development course</p>
-                                <div className={classes.buttonWrap}>
+                                <div className={`${classes.buttonWrap} ${classes.first}`}>
                                     <a href="https://github.com/teoyi/rock-paper-scissors" target="_blank" rel="noopener noreferrer" className={classes.buttonmain}>Rock Paper Scissors</a>
                                     <a href="https://github.com/teoyi/etch-a-sketch" target="_blank" rel="noopener noreferrer" className={classes.buttonalt}>Etch a Sketch</a>
                                     <a href="https://github.com/teoyi/simple-calculator" target="_blank" rel="noopener noreferrer" className={classes.buttonmain}>Calculator</a>
@@ -37,7 +37,7 @@ const Timeline = () => {
                                 <p>Graduated with latin honors, Summa Cum Laude</p>
                                 <div className={classes.buttonWrap}> 
                                     <a href="https://github.com/teoyi/research-process-automation" target="_blank" rel="noopener noreferrer" className={classes.buttonmain}>Automation Script</a>
-                                    <a href="/static/assets/eDiploma.pdf" alt="Certificate of completion" target="_blank" rel="noopener noreferrer" className={classes.buttonmain}>Graduation Certificate</a>
+                                    <a href="/static/assets/eDiploma.pdf" alt="Certificate of completion" target="_blank" rel="noopener noreferrer" className={classes.buttonalt}>Graduation Certificate</a>
                                 </div>
                                 
                             </div>
