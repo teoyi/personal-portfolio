@@ -34,10 +34,11 @@ const Timeline = () => {
                             <div className={classes.content}>
                                 <h3>June 2021</h3>
                                 <p>Completed python research automation script</p>
+                                <p>Completed honors college thesis and defence</p>
                                 <p>Graduated with latin honors, Summa Cum Laude</p>
                                 <div className={classes.buttonWrap}> 
-                                    <a href="https://github.com/teoyi/research-process-automation" target="_blank" rel="noopener noreferrer" className={classes.buttonmain}>Automation Script</a>
-                                    <a href="/static/assets/eDiploma.pdf" alt="Certificate of completion" target="_blank" rel="noopener noreferrer" className={classes.buttonalt}>Graduation Certificate</a>
+                                    <a href="https://github.com/teoyi/research-process-automation" target="_blank" rel="noopener noreferrer" className={classes.buttonmain}>Automation script</a>
+                                    <a href="https://ir.library.oregonstate.edu/catalog?f%5Bcreator_sim%5D%5B%5D=Teo%2C+YiPeng&locale=en" alt="Undergraduate Thesis" target="_blank" rel="noopener noreferrer" className={classes.buttonalt}>View thesis</a>
                                 </div>
                                 
                             </div>
