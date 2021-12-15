@@ -1,5 +1,5 @@
 const Footer = () => {
-    return ( );
+    return (console.log('footer!'));
 }
  
 export default Footer;
