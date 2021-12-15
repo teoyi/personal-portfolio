@@ -6,7 +6,7 @@ const Contact = () => {
         <div className={classes.contact} id="contact">
             <h1 className={classes.title}>Get in touch</h1>
             <p className={classes.contactContent}>
-                If you would like to get in touch with me about project collaboration or just to say hi, you can reach me at any of the platforms below or send me an email directly at 
+                If you would like to get in touch with me about project collaboration or just to say hi, you can reach me at any of the social media platforms or send me an email directly at 
             </p>
             <div className={classes.email}><a href="mailto:yipengteo.luke@gmail.com">&lt;yipengteo.luke@gmail.com&gt;</a></div>
             <div className={classes.navBar__secondary}>
