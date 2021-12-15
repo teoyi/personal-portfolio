@@ -55,6 +55,7 @@
     }
     .subtitle{ 
         margin: 1vw 0;
+        font-size: 3.5vw;
     }
     .navBar__secondary{
         margin-top: 53vh;
@@ -68,9 +69,11 @@
     }
     .subtitle{ 
         margin: 1vw 0;
+        font-size:3.5vw;
     }
     .navBar__secondary{
         margin-top: 53vh;
+        display: none;
     }
 }
 
@@ -81,8 +84,25 @@
     }
     .subtitle{ 
         margin: 1vw 0;
+        font-size: 3.5vw;
     }
     .navBar__secondary{
         margin-top: 53vh;
+        display: none;
+    }
+}
+
+/* Extra large */
+@media only screen and (min-width: 1201px){
+    .luke{
+        font-size: 15vw;
+    }
+    .subtitle{ 
+        margin: 1vw 0;
+        font-size: 2.5vw;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+        display:none;
     }
 }

@@ -80,10 +80,7 @@
     width: 50px;
 }
 
-.navSocials {
-    margin: 0.5rem 0rem;
-    color: #86cecb;
-}
+
 
 /* IPad, Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -121,6 +118,14 @@
     .navBar__main{
         padding: 10px 0;
     }
+    .navBar__secondary{
+        display:flex !important;
+    }
+    .navSocials {
+        height: 5vh;
+        margin: 10px 1vw;
+        color: #86cecb;
+    }
 }
 
 /* Desktops, large screens */
@@ -152,6 +157,14 @@
     .navBar__main{
         padding: 10px 0;
     }
+    .navBar__secondary{
+        display:flex !important;
+    }
+    .navSocials {
+        height: 5vh;
+        margin: 10px 1vw;
+        color: #86cecb;
+    }
 }
 
 /*  Extra large screens */
@@ -182,5 +195,13 @@
     }
     .navBar__main{
         padding: 10px 0;
+    }
+    .navBar__secondary{
+        display:flex !important;
+    }
+    .navSocials {
+        height: 5vh;
+        margin: 10px 1vw;
+        color: #86cecb;
     }
 }
