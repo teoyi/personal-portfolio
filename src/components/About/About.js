@@ -1,12 +1,19 @@
+import React, { useEffect } from 'react'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import Image from 'next/image'
 import profilePicCropped from '../../../public/static/images/theonly-cropped.png'
 import profilePicMain from '../../../public/static/images/theonly_main.png'
 import classes from '../../styles/About.module.css'
 
 const About = () => {
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+    }, []);
+
     return ( 
         <section className={classes.about} id="about">
-            <div className={classes.contentWrapper}>
+            <div data-aos="fade-up" className={classes.contentWrapper}>
                 <h2 className={classes.greetings}>Hello there!</h2>
                 <div className={classes.imageWrapper}>
                     <div className={classes.aboutImage}>
@@ -22,7 +29,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className={classes.imageWrapperDesktop}>
+            <div data-aos="fade-down" className={classes.imageWrapperDesktop}>
                 <div className={classes.aboutImageDesktop}>
                     <Image src={profilePicMain} alt="me" layout='fill' objectFit='contain'  />
                 </div>

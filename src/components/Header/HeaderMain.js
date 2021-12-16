@@ -28,20 +28,20 @@ const Header = () => {
                     <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} size={23} rounded color={navbarOpen ? "#e12885": "#86cecb"} />
                 </div>
                 <ul className={`${classes.menuNav} ${navbarOpen ? classes.showMenu : ""}`}>
-                    <li><Link href="#landing"><a className={classes.navLink} onClick={handleToggle}>Home</a></Link></li>
-                    <li><Link href="#about"><a className={classes.navLink} onClick={handleToggle}>About</a></Link></li>
-                    <li><Link href="#timeline"><a className={classes.navLink} onClick={handleToggle}>Timeline</a></Link></li>
-                    <li><Link href="#projects"><a className={classes.navLink} onClick={handleToggle}>Projects</a></Link></li>
-                    <li><Link href="#contact"><a className={classes.navLink} onClick={handleToggle}>Contact</a></Link></li>
+                    <li><Link href="#landing"><a className={classes.navLink} onClick={handleToggle}>HOME</a></Link></li>
+                    <li><Link href="#about"><a className={classes.navLink} onClick={handleToggle}>ABOUT</a></Link></li>
+                    <li><Link href="#timeline"><a className={classes.navLink} onClick={handleToggle}>TIMELINE</a></Link></li>
+                    <li><Link href="#projects"><a className={classes.navLink} onClick={handleToggle}>PROJECTS</a></Link></li>
+                    <li><Link href="#contact"><a className={classes.navLink} onClick={handleToggle}>CONTACT</a></Link></li>
                 </ul>
             </div>
             <div className={classes.navBar__right}>
                 <ul className={classes.menuNav_main}>
-                    <li><Link href="#landing"><a className={classes.navLink_main}>Home</a></Link></li>
-                    <li><Link href="#about"><a className={classes.navLink_main}>About</a></Link></li>
-                    <li><Link href="#timeline"><a className={classes.navLink_main}>Timeline</a></Link></li>
-                    <li><Link href="#projects"><a className={classes.navLink_main}>Projects</a></Link></li>
-                    <li><Link href="#contact"><a className={classes.navLink_main}>Contact</a></Link></li>
+                    <li><Link href="#landing"><a className={classes.navLink_main}>HOME</a></Link></li>
+                    <li><Link href="#about"><a className={classes.navLink_main}>ABOUT</a></Link></li>
+                    <li><Link href="#timeline"><a className={classes.navLink_main}>TIMELINE</a></Link></li>
+                    <li><Link href="#projects"><a className={classes.navLink_main}>PROJECTS</a></Link></li>
+                    <li><Link href="#contact"><a className={classes.navLink_main}>CONTACT</a></Link></li>
                 </ul>
             </div>
         </nav>
