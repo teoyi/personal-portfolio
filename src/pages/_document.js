@@ -24,6 +24,12 @@ export default class MyDocument extends Document {
                         as="font"
                         crossOrigin=""
                     /> */}
+                    <link
+                        rel="preload"
+                        href="/public/fonts/Manrope-Bold.woff"
+                        as="font"
+                        crossOrigin=""
+                    />
                 </Head>
                 <body>
                     <Main />

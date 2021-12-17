@@ -11,8 +11,28 @@ const Landing = () => {
     }, []);
 
     return ( 
-        <section className={classes.landing} id="landing">
-            <p data-aos="fade-right" className={classes.subtitle}>Aspiring full-stack web developer</p>
+        <section className={classes.section__Landing} id="landing">
+            <div className={classes.wrapper}>
+                <div className={classes.marquee}>
+                    <span className={classes.subText}>
+                        Aspiring full-stack web developer and software engineer
+                    </span>
+                </div>
+                <div className={classes.mainText}>
+                    <div className={classes.firstName}>
+                        <span>L</span>
+                        <span>U</span>
+                        <span>K</span>
+                        <span>E</span>
+                    </div>
+                    <div className={classes.lastName}>
+                        <span>T</span>
+                        <span>E</span>
+                        <span>O</span>
+                    </div>
+                </div>
+            </div>
+            {/* <p data-aos="fade-right" className={classes.subtitle}>Aspiring full-stack web developer</p>
             <div className={classes.landingWrapper}>
                 <h2 data-aos="fade-left" className={classes.luke}>Luke</h2>
             </div>
@@ -20,7 +40,7 @@ const Landing = () => {
                 <a href="https://www.instagram.com/yipeng_/" className={classes.navSocials}><FaInstagramSquare size="2.2rem" /></a>
                 <a href="https://github.com/teoyi" className={classes.navSocials}><FaGithubSquare size="2.2rem" /></a>
                 <a href='https://www.linkedin.com/in/luketeo/' className={classes.navSocials}><FaLinkedin size="2.2rem" /></a>
-            </div>
+            </div> */}
         </section>
     );
 }

@@ -19,8 +19,7 @@ const Header = () => {
 
     return (
         <nav className={classes.navBar__main}>
-            <div className={classes.navBar__left}>
-                {/* <Link href="#landing" passHref><Image onClick={handleLogo} className={classes.logo} src={logo} alt="logo" layout='fill' objectFit='contain'/></Link> */}
+            {/* <div className={classes.navBar__left}>
                 <Link href="#landing"><a className={classes.logo} onClick={handleLogo}>LUKE.DEV</a></Link>
             </div>
             <div className={classes.navBar__right_mobile}>
@@ -43,7 +42,7 @@ const Header = () => {
                     <li><Link href="#projects"><a className={classes.navLink_main}>PROJECTS</a></Link></li>
                     <li><Link href="#contact"><a className={classes.navLink_main}>CONTACT</a></Link></li>
                 </ul>
-            </div>
+            </div> */}
         </nav>
     );
 };

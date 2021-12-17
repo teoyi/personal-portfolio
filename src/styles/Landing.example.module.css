@@ -1,0 +1,112 @@
+.landing{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* font-family: "deterMono"; */
+    height: 100vh;
+}
+
+.landingWrapper {
+}
+
+.luke{
+    font-family: "Bai Jamjuree", serif;
+    color:#86cecb;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 118px;
+    margin: 0;
+    text-shadow: 0.05em 0.07em 0 rgba(255, 40, 133, 0.75);
+}
+
+.lastName{
+    font-family: "Bai Jamjuree", serif;
+    font-size: 100px;
+    margin:0;
+}
+
+.subtitle{
+    z-index: 5;
+    width: 100%;
+    background: #373b3e;
+    position: absolute;
+    text-align: center;
+    margin:0;
+    font-size: 18.5px;
+    font-family: "Bai Jamburee", serif;
+}
+
+.navBar__secondary{
+    position: absolute;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 245px;
+    width: 50%;
+}
+
+.navSocials {
+    margin: 0.5rem 0rem;
+    color: #86cecb;
+}
+
+/* IPad, Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .luke{
+        font-size: 200px;
+    }
+    .subtitle{ 
+        /* margin: 1vw 0; */
+        font-size: 30px;
+    }
+    .navBar__secondary{
+        margin-top: 300px;
+    }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .luke{
+        font-size: 260px;
+    }
+    .subtitle{ 
+        /* margin: 1vw 0; */
+        font-size:35px;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+        display: none;
+    }
+}
+
+/* Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .luke{
+        font-size: 260px;
+    }
+    .subtitle{ 
+        /* margin: 1vw 0; */
+        font-size: 35px;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+        display: none;
+    }
+}
+
+/* Extra large */
+@media only screen and (min-width: 1201px){
+    .luke{
+        font-size: 310px;
+    }
+    .subtitle{ 
+        margin: 1vw 0;
+        font-size: 45px;
+    }
+    .navBar__secondary{
+        margin-top: 53vh;
+        display:none;
+    }
+}

@@ -7,9 +7,9 @@ import classes from '../../styles/Header.module.css'
 const Header = () => {
     return (
         <div className={classes.navBar__secondary}>
-            <a href="#" className={classes.navSocials}><FaInstagramSquare size="2.5rem" /></a>
+            {/* <a href="#" className={classes.navSocials}><FaInstagramSquare size="2.5rem" /></a>
             <a href="#" className={classes.navSocials}><FaGithubSquare size="2.5rem" /></a>
-            <a href='#' className={classes.navSocials}><FaLinkedin size="2.5rem" /></a>
+            <a href='#' className={classes.navSocials}><FaLinkedin size="2.5rem" /></a> */}
         </div>
     );
 };

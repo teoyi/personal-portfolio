@@ -4,8 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #373b3e;
-  color: #bec8d1;
+  background-color: #ecebe2;
+  color: #333335;
 }
 
 html {
@@ -37,4 +37,9 @@ a {
 @font-face {
   font-family: "deterSans";
   src: url("../..//public/fonts/DeterminationSansWeb.woff");
+}
+
+@font-face {
+  font-family: "Manrope B";
+  src: url("../..//public/fonts/Manrope-Bold.woff");
 }
