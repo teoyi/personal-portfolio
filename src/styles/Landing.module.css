@@ -3,34 +3,38 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    font-family: "deterMono";
+    /* font-family: "deterMono"; */
     height: 100vh;
 }
 
 .landingWrapper {
-    text-align: center;
 }
 
 .luke{
+    font-family: "Bai Jamjuree", serif;
     color:#86cecb;
     text-transform: uppercase;
     position: relative;
-    font-size: 25vw;
+    font-size: 118px;
     margin: 0;
     text-shadow: 0.05em 0.07em 0 rgba(255, 40, 133, 0.75);
 }
 
-.name{
+.lastName{
+    font-family: "Bai Jamjuree", serif;
+    font-size: 100px;
     margin:0;
-    font-size: 2.5rem;
-    position: absolute;
-    left: 50%;
 }
 
 .subtitle{
+    z-index: 5;
+    width: 100%;
+    background: #373b3e;
+    position: absolute;
+    text-align: center;
     margin:0;
-    font-size: 4.5vw;
-    font-family: "deterSans";
+    font-size: 18.5px;
+    font-family: "Bai Jamburee", serif;
 }
 
 .navBar__secondary{
@@ -39,7 +43,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center; 
-    margin-top: 45vh;
+    margin-top: 245px;
     width: 50%;
 }
 
@@ -51,25 +55,25 @@
 /* IPad, Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .luke{
-        font-size: 20vw;
+        font-size: 200px;
     }
     .subtitle{ 
-        margin: 1vw 0;
-        font-size: 3.5vw;
+        /* margin: 1vw 0; */
+        font-size: 30px;
     }
     .navBar__secondary{
-        margin-top: 53vh;
+        margin-top: 300px;
     }
 }
 
 /* Small screens, laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .luke{
-        font-size: 20vw;
+        font-size: 260px;
     }
     .subtitle{ 
-        margin: 1vw 0;
-        font-size:3.5vw;
+        /* margin: 1vw 0; */
+        font-size:35px;
     }
     .navBar__secondary{
         margin-top: 53vh;
@@ -80,11 +84,11 @@
 /* Desktops, large screens */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .luke{
-        font-size: 20vw;
+        font-size: 260px;
     }
     .subtitle{ 
-        margin: 1vw 0;
-        font-size: 3.5vw;
+        /* margin: 1vw 0; */
+        font-size: 35px;
     }
     .navBar__secondary{
         margin-top: 53vh;
@@ -95,11 +99,11 @@
 /* Extra large */
 @media only screen and (min-width: 1201px){
     .luke{
-        font-size: 15vw;
+        font-size: 310px;
     }
     .subtitle{ 
         margin: 1vw 0;
-        font-size: 2.5vw;
+        font-size: 45px;
     }
     .navBar__secondary{
         margin-top: 53vh;

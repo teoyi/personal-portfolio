@@ -10,7 +10,7 @@
 
 .title{
     font-size: 10vw;
-    font-family: 'determono', serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center; 
 }
 
@@ -89,7 +89,7 @@
 }
 
 .content{
-    font-family: 'determono', serif;
+    font-family: 'Open Sans', sans-serif;
     /* padding-bottom:20px; */
 }
 

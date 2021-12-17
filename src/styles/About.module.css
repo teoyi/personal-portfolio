@@ -4,7 +4,7 @@
     justify-content:center;
     align-items: center;
     height: 100vh;
-    font-family: 'determono', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .contentWrapper{    
     display:flex; 
@@ -13,9 +13,10 @@
 }
 
 .greetings {
-    font-size: 10vw;
+    font-size: 25px;
+    margin: 10px 10vw;
     /* margin-left: 9.5vw; */
-    text-align:center;
+    /* text-align:center; */
 }
 
 .imageWrapper{
@@ -23,17 +24,39 @@
     justify-content:center;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
 }
 
 .aboutImage{
     /* force height and width to be the same */
-    height: 25vh;
-    width: 25vh; 
+    height: 150px;
+    width: 150px; 
     margin: 15px 0;
-    border-radius: 50%;
+    border-radius:10px;
     position: relative;
     /* border: solid 1px red !important; */
     overflow: hidden;
+    z-index: 2
+}
+
+.outlineImage{
+    height: 150px;
+    width: 150px; 
+    border: solid 1px #86cecb;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.outlineImage2{
+    height: 150px;
+    width: 150px; 
+    border: solid 1px #e12885;
+    position: absolute;
+    margin-top: 20px;
+    margin-right:20px;
+    border-radius: 10px;
 }
 
 .subtitleWrapper{ 
@@ -42,7 +65,7 @@
 }
 
 .subtitle{ 
-    font-size: 5vw;
+    font-size: 15px;
     margin: 0 10vw;
     line-height: 20px;
 }
@@ -71,6 +94,7 @@
     /* border: solid 2px red; */
     border-radius: 15px;
     overflow: hidden;
+    z-index: 2;
 }
 
 
@@ -82,6 +106,45 @@
     .aboutImage{
         margin: 20px 0;
     }
+    .imageWrapper{
+        display: none; 
+    }
+    .imageWrapperDesktop{
+        display: block;
+    }
+    .aboutImageDesktop{
+        height:300px;
+        width: 252px;
+        /* border: solid 1px red; */
+    }
+    .outlineImage{
+        margin-bottom: 0;
+        margin-left: 25px;
+        margin-top: -280px;
+        height: 300px;
+        width: 252px;
+    }
+    .outlineImage2 {
+        margin-bottom: 0;
+        margin-left: -25px;
+        margin-right:0;
+        margin-top: -320px;
+        height: 300px;
+        width: 252px;
+    }
+    .about{
+        margin: 0 10vw;
+    }
+    .greetings{
+        margin: 0 5vw;
+        text-align: left;
+        font-size: 25px;
+    }
+    .subtitle{ 
+        margin: 20px 5vw;
+        line-height: 25px;
+        font-size: 15px;
+    }
 }
 
 /* Small screens, laptops */
@@ -92,23 +155,38 @@
     .imageWrapperDesktop{
         display: block;
     }
-    .greetings{
-        font-size: 2vw;
-    }
-    .subtitle{ 
-        font-size: 2vw;
-    }
     .about{
         margin: 0 10vw;
     }
     .greetings{
         margin: 0 5vw;
         text-align: left;
-        font-size: 4vw;
+        font-size: 30px;
     }
     .subtitle{ 
         margin: 20px 5vw;
         line-height: 25px;
+        font-size: 19px;
+    }
+    .aboutImageDesktop{
+        height:300px;
+        width: 252px;
+        /* border: solid 1px red; */
+    }
+    .outlineImage{
+        margin-bottom: 0;
+        margin-left: 25px;
+        margin-top: -280px;
+        height: 300px;
+        width: 252px;
+    }
+    .outlineImage2 {
+        margin-bottom: 0;
+        margin-left: -25px;
+        margin-right:0;
+        margin-top: -320px;
+        height: 300px;
+        width: 252px;
     }
 }
 
@@ -120,23 +198,38 @@
     .imageWrapperDesktop{
         display: block;
     }
-    .greetings{
-        font-size: 2vw;
-    }
-    .subtitle{ 
-        font-size: 2vw;
-    }
     .about{
         margin: 0 10vw;
     }
     .greetings{
         margin: 0 5vw;
         text-align: left;
-        font-size: 4vw;
+        font-size: 35px;
     }
     .subtitle{ 
         margin: 20px 5vw;
         line-height: 30px;
+        font-size: 23px;
+    }
+    .aboutImageDesktop{
+        height:300px;
+        width: 252px;
+        /* border: solid 1px red; */
+    }
+    .outlineImage{
+        margin-bottom: 0;
+        margin-left: 25px;
+        margin-top: -280px;
+        height: 300px;
+        width: 252px;
+    }
+    .outlineImage2 {
+        margin-bottom: 0;
+        margin-left: -25px;
+        margin-right:0;
+        margin-top: -320px;
+        height: 300px;
+        width: 252px;
     }
 }
 
@@ -148,22 +241,32 @@
     .imageWrapperDesktop{
         display: block;
     }
-    .greetings{
-        font-size: 2vw;
-    }
-    .subtitle{ 
-        font-size: 2vw;
-    }
     .about{
         margin: 0 10vw;
     }
     .greetings{
         margin: 0 5vw;
         text-align: left;
-        font-size: 4vw;
+        font-size: 40px;
     }
     .subtitle{ 
         margin: 20px 5vw;
         line-height: 35px;
+        font-size: 28px;
+    }
+    .outlineImage{
+        margin-bottom: 0;
+        margin-left: 25px;
+        margin-top: -330px;
+        height: 360px;
+        width: 325px;
+    }
+    .outlineImage2 {
+        margin-bottom: 0;
+        margin-left: -25px;
+        margin-right:0;
+        margin-top: -385px;
+        height: 360px;
+        width: 325px;
     }
 }

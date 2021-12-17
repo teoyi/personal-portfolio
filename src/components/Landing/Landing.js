@@ -12,10 +12,9 @@ const Landing = () => {
 
     return ( 
         <section className={classes.landing} id="landing">
+            <p data-aos="fade-right" className={classes.subtitle}>Aspiring full-stack web developer</p>
             <div className={classes.landingWrapper}>
-                {/* <p className={classes.name}>YiPeng Teo</p> */}
-                <h2 data-aos="fade-left" className={classes.luke}>&lt;Luke&gt;</h2>
-                <p data-aos="fade-right" className={classes.subtitle}>Aspiring web/software developer</p>
+                <h2 data-aos="fade-left" className={classes.luke}>Luke</h2>
             </div>
             <div data-aos="fade-up" className={classes.navBar__secondary}>
                 <a href="https://www.instagram.com/yipeng_/" className={classes.navSocials}><FaInstagramSquare size="2.2rem" /></a>

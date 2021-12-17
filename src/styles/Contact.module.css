@@ -4,35 +4,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'deterMono';
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .title{
-    font-size: 10vw; 
+    font-size: 25px; 
     margin: 5vw 0;
 }
 
 .email { 
     color: #86cecb;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 17px;
     margin: 3vh 0;
-    font-family: 'deterSans';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contactContent{ 
-    font-size: 5vw;
+    font-size: 15px;
     margin: 0 10vw;
     text-align: center;
 }
 
 .navBar__secondary{
-    position: absolute;
+    /* position: absolute; */
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center; 
-    margin-top: 60vh;
+    margin-top: px;
     width: 50%;
 }
 
@@ -44,65 +45,57 @@
 /* IPad, Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .title{ 
-        font-size: 6vw;
         margin: 2vw 0;
-    }
-    .contactContent{
-        font-size: 4vw;
-    }
-    .navBar__secondary{
-        display: none;
     }
 }
 
 /* Small screens, laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .title{ 
-        font-size: 4vw;
+        font-size: 30px;
         margin: 2vw 0;
     }
     .contactContent{
-        font-size: 3vw;
+        font-size: 19px;
     }
     .navBar__secondary{
         display: none;
     }
     .email{
-        font-size: 4vw;
+        font-size: 22px;
     }
 }
 
 /* Desktops, large screens */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .title{ 
-        font-size: 4vw;
+        font-size: 30px;
         margin: 2vw 0;
     }
     .contactContent{
-        font-size: 3vw;
+        font-size: 19px;
     }
     .navBar__secondary{
         display: none;
     }
     .email{
-        font-size: 4vw;
+        font-size: 22px;
     }
 }
 
 /* Extra large */
 @media only screen and (min-width: 1201px){
     .title{ 
-        font-size: 4vw;
+        font-size: 40px;
         margin: 2vw 0;
     }
     .contactContent{
-        font-size: 2vw;
-        margin: 0 24vw;
+        font-size: 28px;
     }
     .navBar__secondary{
         display: none;
     }
     .email{
-        font-size: 3vw;
+        font-size: 32px;
     }
 }
