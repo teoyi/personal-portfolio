@@ -1,50 +1,144 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
-import { Spin as Hamburger } from 'hamburger-react'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import Link from 'next/link';
 import classes from '../../styles/Header.module.css'
-import Image from 'next/image'
-import logo from '../../../public/static/logo/logo_turq_crop-removebg-preview.png'
+import Marquee from "react-fast-marquee"
+import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 const Header = () => {
+
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const [hoverActiveHome, setHoverActiveHome] = useState(false);
+    const [hoverActiveAbout, setHoverActiveAbout] = useState(false);
+    const [hoverActiveProjects, setHoverActiveProjects] = useState(false);
+    const [hoverActiveContact, setHoverActiveContact] = useState(false);
 
     const handleToggle = () => {
         setNavbarOpen(prev => !prev);
     }
     
-    const handleLogo = () => {
-        setNavbarOpen(false);
-    }
 
     return (
-        <nav className={classes.navBar__main}>
-            {/* <div className={classes.navBar__left}>
-                <Link href="#landing"><a className={classes.logo} onClick={handleLogo}>LUKE.DEV</a></Link>
-            </div>
-            <div className={classes.navBar__right_mobile}>
-                <div  className={classes.hamburger}>
-                    <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} size={23} rounded color={navbarOpen ? "#e12885": "#86cecb"} />
-                </div>
-                <ul className={`${classes.menuNav} ${navbarOpen ? classes.showMenu : ""}`}>
-                    <li><Link href="#landing"><a className={classes.navLink} onClick={handleToggle}>HOME</a></Link></li>
-                    <li><Link href="#about"><a className={classes.navLink} onClick={handleToggle}>ABOUT</a></Link></li>
-                    <li><Link href="#timeline"><a className={classes.navLink} onClick={handleToggle}>TIMELINE</a></Link></li>
-                    <li><Link href="#projects"><a className={classes.navLink} onClick={handleToggle}>PROJECTS</a></Link></li>
-                    <li><Link href="#contact"><a className={classes.navLink} onClick={handleToggle}>CONTACT</a></Link></li>
-                </ul>
-            </div>
-            <div className={classes.navBar__right}>
-                <ul className={classes.menuNav_main}>
-                    <li><Link href="#landing"><a className={classes.navLink_main}>HOME</a></Link></li>
-                    <li><Link href="#about"><a className={classes.navLink_main}>ABOUT</a></Link></li>
-                    <li><Link href="#timeline"><a className={classes.navLink_main}>TIMELINE</a></Link></li>
-                    <li><Link href="#projects"><a className={classes.navLink_main}>PROJECTS</a></Link></li>
-                    <li><Link href="#contact"><a className={classes.navLink_main}>CONTACT</a></Link></li>
-                </ul>
-            </div> */}
-        </nav>
-    );
-};
- 
+        <div className={classes.header}>
+            <div className={classes.menu} onClick={handleToggle}>{!navbarOpen ? "MENU" : "CLOSE"}</div>
+            <ul className={`${classes.menuNav} ${navbarOpen ? classes.showMenu : ""}`}>
+                <li>
+                    <div 
+                        onMouseEnter={() => setHoverActiveHome(true)} 
+                        onMouseLeave={() => setHoverActiveHome(false)}
+                        className={hoverActiveHome ? classes.hoverActivated : ""}
+                    >
+                        <Link href="#landing">
+                            <a className={`${classes.navLink} ${hoverActiveHome ? classes.hide : classes.show}`} onClick={handleToggle}>
+                                HOME
+                            </a>
+                        </Link>
+                        <Link href="#landing" passHref={true}>
+                            <a className={`${classes.navMarquee} ${hoverActiveHome ? classes.show : classes.hide}`} onClick={handleToggle}>
+                                <Marquee speed="100" gradient={false} delay="0" >
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                    <div className={classes.marquee_text}>HOME</div>
+                                </Marquee>
+                            </a>
+                        </Link>
+                    </div>
+                </li>
+                <li>
+                    <div 
+                        onMouseEnter={() => setHoverActiveAbout(true)} 
+                        onMouseLeave={() => setHoverActiveAbout(false)}
+                        className={hoverActiveAbout ? classes.hoverActivated : ""}
+                    >
+                        <Link href="#about">
+                            <a className={`${classes.navLink} ${hoverActiveAbout ? classes.hide : classes.show}`} onClick={handleToggle}>
+                                ABOUT
+                            </a>
+                        </Link>
+                        <Link href="#about" passHref={true}>
+                            <a className={`${classes.navMarquee} ${hoverActiveAbout ? classes.show : classes.hide}`} onClick={handleToggle}>
+                                <Marquee speed="100" gradient={false} delay="0" >
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                    <div className={classes.marquee_text}>ABOUT</div>
+                                </Marquee>
+                            </a>
+                        </Link>
+                    </div>
+                </li>
+                {/* <li><Link href="#timeline"><a className={classes.navLink} onClick={handleToggle}>TIMELINE</a></Link></li> */}
+                <li>
+                    <div 
+                        onMouseEnter={() => setHoverActiveProjects(true)} 
+                        onMouseLeave={() => setHoverActiveProjects(false)}
+                        className={hoverActiveProjects ? classes.hoverActivated : ""}
+                    >
+                        <Link href="#projects">
+                            <a className={`${classes.navLink} ${hoverActiveProjects ? classes.hide : classes.show}`} onClick={handleToggle}>
+                                PROJECTS
+                            </a>
+                        </Link>
+                        <Link href="#projects" passHref={true}>
+                            <a className={`${classes.navMarquee} ${hoverActiveProjects ? classes.show : classes.hide}`} onClick={handleToggle}>
+                                <Marquee speed="100" gradient={false} delay="0" >
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                    <div className={classes.marquee_text}>PROJECTS</div>
+                                </Marquee>
+                            </a>
+                        </Link>
+                    </div>
+                </li>
+                <li>
+                    <div className={classes.navLink_contact}>
+                        <Link href="#contact">
+                            <a className={classes.navLink_contactBtn} onClick={handleToggle}>
+                                CONTACT
+                            </a>
+                        </Link>
+                        <div className={classes.hrLine}></div>
+                        <a href="#" className={classes.navSocials}><FaInstagramSquare size="2rem" /></a>
+                        <a href="#" className={classes.navSocials}><FaGithubSquare size="2rem" /></a>
+                        <a href='#' className={classes.navSocials}><FaLinkedin size="2rem" /></a>
+                    </div>
+                        
+                </li>
+            </ul>
+            <div className={`${classes.showMenuOverlay} ${navbarOpen ? classes.showMenuOverlayActive : ""}`}></div>
+        </div>
+    )
+}
+
 export default Header

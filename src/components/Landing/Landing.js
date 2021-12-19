@@ -3,6 +3,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import classes from '../../styles/Landing.module.css'
 import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import Marquee from "react-fast-marquee"
 
 
 const Landing = () => {
@@ -20,15 +21,10 @@ const Landing = () => {
                 </div>
                 <div className={classes.mainText}>
                     <div className={classes.firstName}>
-                        <span>L</span>
-                        <span>U</span>
-                        <span>K</span>
-                        <span>E</span>
+                        LUKE
                     </div>
                     <div className={classes.lastName}>
-                        <span>T</span>
-                        <span>E</span>
-                        <span>O</span>
+                        TEO
                     </div>
                 </div>
             </div>

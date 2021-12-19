@@ -35,6 +35,10 @@
     z-index:3;
 }
 
+.firstName:hover{
+    transform: rotate3d(180deg);
+}
+
 .lastName{
     margin-left: 28.5px;
     -webkit-text-stroke: 5px #333335;
@@ -47,8 +51,8 @@
 .marquee {
     /* width: 450px; */
     /* height: 70vh; */
-    margin-right:4vw;
-    margin: 0 auto;
+    margin-right:85px;
+    /* margin: 0 auto; */
     overflow: hidden;
     box-sizing: border-box;
     height: 100vh;
