@@ -1,12 +1,18 @@
 .header{
     font-family: 'Manrope B';
     color: #333335;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end;
+    z-index: 20;
 }
 
 .menu{
-    position: absolute;
+    /* position: absolute; */
     right: 0;
-    z-index: 6;
+    z-index: 10;
     margin: 20px 50px;
     cursor: pointer;
     font-size: 20px;

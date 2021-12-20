@@ -28,6 +28,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            
             {/* <p data-aos="fade-right" className={classes.subtitle}>Aspiring full-stack web developer</p>
             <div className={classes.landingWrapper}>
                 <h2 data-aos="fade-left" className={classes.luke}>Luke</h2>

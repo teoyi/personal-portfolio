@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
       <Layout>
         <Landing />
-        {/* <About />
-        <Timeline />
-        <Projects /> */}
+        <About />
+        {/* <Timeline /> */}
+        {/* <Projects /> */}
         {/* <Contact /> */}
       </Layout>
     </div>

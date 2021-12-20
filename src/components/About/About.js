@@ -1,42 +1,34 @@
-import React, { useEffect } from 'react'
-import Aos from 'aos'
-import "aos/dist/aos.css"
+import React, { useState } from 'react'
 import Image from 'next/image'
 import profilePicCropped from '../../../public/static/images/theonly_square.png'
 import profilePicMain from '../../../public/static/images/theonly_main.png'
 import classes from '../../styles/About.module.css'
 
-const About = () => {
-    useEffect(()=>{
-        Aos.init({duration: 2000});
-    }, []);
 
+const About = () => {
+    const [clicked, setClicked] = useState(false);
     return ( 
         <section className={classes.about} id="about">
-            <div data-aos="fade-up" className={classes.contentWrapper}>
-                <h2 className={classes.greetings}>Hello there!</h2>
-                <div className={classes.subtitleWrapper}>
-                    <p className={classes.subtitle}>
-                        My name is <span className={classes.firstName}>YiPeng</span> and I go by the name <span className={classes.engName}>Luke</span>. 
-                        <br />
-                        <br />
-                        I am a self-taught developer that has since been involved in projects in both personal and professional setting. Action speaks louder than words, so I will let this website speak on behalf my skills.
-                    </p>
-                </div>
-                <div data-aos="fade-up" className={classes.imageWrapper}>
-                    <div className={classes.aboutImage}>
-                        <Image className={classes.image} src={profilePicCropped} alt="me" layout='fill' objectFit='contain'  />
-                    </div>
-                    <div data-aos="fade-left" className={classes.outlineImage}></div>
-                    <div data-aos="fade-right" className={classes.outlineImage2}></div>
-                </div>
+            {/* <div className={classes.vertLine}></div> */}
+            <div className={classes.mainText}>
+                ABOUT
             </div>
-            <div data-aos="fade-down" className={classes.imageWrapperDesktop}>
-                <div className={classes.aboutImageDesktop}>
-                    <Image src={profilePicMain} alt="me" layout='fill' objectFit='contain'  />
-                </div>
-                <div data-aos="fade-left" className={classes.outlineImage}></div>
-                <div data-aos="fade-right" className={classes.outlineImage2}></div>
+            <div className={classes.leftText}>
+                <div className={classes.leftTitle}><span className={classes.preText}>Graduate of</span><br /><span className={classes.title}>Oregon State University</span></div>
+                <div className={classes.para}>Majored in Physics and minored in finance</div>
+                <div className={classes.para}>Honors College Associate</div>
+                <div className={classes.para}>Author of a research automation script</div>
+                <div className={classes.para}>Successful completion of research thesis and thesis defence</div>
+                <div className={classes.para}>Graduated with the highest distinction, Summa Cum Laude</div>
+            </div>
+            <div className={classes.aboutImage1}>
+                <Image src={profilePicMain} alt="me" layout='fill' objectFit='contain'  />
+            </div>
+            <div className={classes.rightText}>
+                <div className={classes.title}>Self-taught Developer</div>
+                <div className={classes.para}>Learnt web development through<br /> The Odin Project</div>
+                <div className={classes.para}>Became a Junior Full-Stack web developer <br /> @ RPAT Pte Ltd</div>
+                <div className={classes.para}>Currently a Software Engineer <br/>@ Craft Digital Pte Ltd</div>
             </div>
         </section>
         
