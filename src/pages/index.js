@@ -17,8 +17,8 @@ export default function Home() {
         <Landing />
         <About />
         {/* <Timeline /> */}
-        {/* <Projects /> */}
-        {/* <Contact /> */}
+        <Projects />
+        <Contact />
       </Layout>
     </div>
       

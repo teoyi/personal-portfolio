@@ -35,7 +35,7 @@
     border-radius: 10px;
     left: 0;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px 0px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .leftText{
@@ -65,14 +65,14 @@
 .leftText{
     display: flex; 
     flex-direction: column;
-    height: 60%;
+    height: 50%;
     width: 30%;
 }
 
 .rightText{
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 65%;
     width: 30%;
 }
 

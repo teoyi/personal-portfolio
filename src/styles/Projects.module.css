@@ -1,104 +1,55 @@
-.projects{
-    display:flex; 
-    flex-direction: column;
+.projects{ 
+    display: flex; 
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 100px;
 }
 
-.construction{
-    margin: 20vw 0;
+.title{ 
+    font-family: 'Manrope B';
+    font-size: 282px;
 }
 
-.underConstructWrap{
-    display:flex;
+.image{
+    height: 493px; 
+    width: 701px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 100px 50px;
+}
+
+.project1{ 
+    display: flex; 
+    flex-direction: row; 
     justify-content: center;
+    align-items: center;
 }
 
-.underConstruct{
-    width: 40vh;
-    height: auto;
+.project2{ 
+    display: flex; 
+    flex-direction: row-reverse; 
+    justify-content: center;
+    align-items: center;
 }
 
-.mainTitle{
-    font-family:'Open Sans', sans-serif;
-    text-align: center;
-    font-size: 10vw;
+.project3{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
 }
 
-.title{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 6vw;
-    text-align: center;
+.text{ 
+    margin: 50px;
+    width: 500px;
+    font-family: 'Manrope B';
 }
 
-.subtitle{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 10vw;
-    font-size: 5vw;
-    text-align: center;
+.text h1{
+    font-size: 40px;
 }
 
-/* IPad, Tablet */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .mainTitle{
-        font-size: 6vw;
-    }
-    .construction{
-        margin: 7vw 0;
-    }
-    .title{ 
-        font-size: 5vw;
-    }
-    .subtitle{ 
-        font-size: 4vw;
-    }
-}
-
-/* Small screens, laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .mainTitle{
-        font-size: 4vw;
-    }
-    .construction{
-        margin: 3vw 0;
-    }
-    .title{ 
-        font-size: 3vw;
-    }
-    .subtitle{ 
-        font-size: 2vw;
-    }
-}
-
-/* Desktops, large screens */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .mainTitle{
-        font-size: 4vw;
-    }
-    .construction{
-        margin: 3vw 0;
-    }
-    .title{ 
-        font-size: 3vw;
-    }
-    .subtitle{ 
-        font-size: 2vw;
-    }
-}
-
-/* Extra large */
-@media only screen and (min-width: 1201px){
-    .mainTitle{
-        font-size: 4vw;
-    }
-    .construction{
-        margin: 3vw 0;
-    }
-    .title{ 
-        font-size: 3vw;
-    }
-    .subtitle{ 
-        font-size: 2vw;
-    }
+.text p{ 
+    font-size: 20px;
 }
