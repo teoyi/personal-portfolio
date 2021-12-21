@@ -18,17 +18,17 @@
 
 .mainText{
     font-family: 'Manrope B';
-    font-size: 360px;
+    font-size: 284px;
     display: flex; 
     flex-direction: column;
-    line-height: 330px;
+    line-height: 229px;
     pointer-events: none;
 }
 
 .subText{ 
     writing-mode: vertical-lr;
     font-family: 'Manrope B';
-    font-size: 32px;
+    font-size: 2.2vw;
 }
 
 .firstName{
@@ -40,7 +40,7 @@
 }
 
 .lastName{
-    margin-left: 28.5px;
+    margin-left: 22.5px;
     -webkit-text-stroke: 5px #333335;
     -webkit-text-fill-color: #ecebe2;
     z-index: 2;
@@ -51,7 +51,7 @@
 .marquee {
     /* width: 450px; */
     /* height: 70vh; */
-    margin-right:85px;
+    margin-right:4vw;
     /* margin: 0 auto; */
     overflow: hidden;
     box-sizing: border-box;
@@ -74,3 +74,78 @@
     100% { transform: translateY(-100%); }
 }
 
+
+
+/* 320px — 480px: Mobile devices */
+/* 481px — 768px: iPads, Tablets */
+/* 769px — 1024px: Small screens, laptops */
+/* 1025px — 1200px: Desktops, large screens */
+/* 1201px and more —  Extra large screens, TV */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .mainText{
+        font-size: 25vw; 
+        line-height: 20vw;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .lastName{
+        margin-left: 0;
+    }
+    .wrapper{
+        width: 100%;
+        margin-left: 0;
+    }
+    .marquee{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .mainText{
+        font-size: 25vw; 
+        line-height: 20vw;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .marquee{
+        display: none;
+    }
+    .lastName{
+        margin-left: 0;
+    }
+    .wrapper{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .mainText{
+        font-size: 255px;
+        line-height: 207px;
+    }
+    .lastName{
+        margin-left: 20.5px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    
+}
+
+@media only screen and (min-width: 1980px){
+    .subText{
+        font-size: 1.6vw;
+    }
+    .mainText{
+        font-family: 'Manrope B';
+        font-size: 360px;
+        display: flex; 
+        flex-direction: column;
+        line-height: 330px;
+        pointer-events: none;
+    }
+}
