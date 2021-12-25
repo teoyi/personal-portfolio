@@ -8,7 +8,7 @@
 
 .title{ 
     font-family: 'Manrope B';
-    font-size: 282px;
+    font-size: 244px;
 }
 
 .image{
@@ -52,4 +52,91 @@
 
 .text p{ 
     font-size: 20px;
+}
+
+
+/* 320px — 480px: Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .title{
+        font-size: 15vw;
+        margin-top: 30px;
+    }
+    .project1{
+        flex-direction: column;
+    }
+    .project2{
+        flex-direction: column;
+    }
+    .project3{
+        flex-direction: column;
+    }
+    .image{
+        margin: 20px;
+        height: 212px; 
+        width: 300px;
+
+    }
+    .text{
+        width: 281px;
+    }
+    .text h1{
+        font-size: 5vw;
+    }
+    .text p{ 
+        font-size: 4vw;
+    }
+}
+/* 481px — 768px: iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .title{
+        font-size: 115px;
+    }
+    .project1{
+        flex-direction: column;
+    }
+    .project2{
+        flex-direction: column;
+    }
+    .project3{
+        flex-direction: column;
+    }
+    .image{
+        margin: 20px;
+        height: 424px; 
+        width: 600px;
+
+    }
+    .text{
+        width: 530px;
+    }
+}
+/* 769px — 1024px: Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .title{
+        font-size: 158px;
+    }
+    .project1{
+        flex-direction: column;
+    }
+    .project2{
+        flex-direction: column;
+    }
+    .project3{
+        flex-direction: column;
+    }
+    .image{
+        margin: 20px;
+    }
+    .text{
+        width: 666px;
+    }
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+}
+
+/* 1201px and more —  Extra large screens, TV -> current original styling is for that  */
+@media only screen and (min-width: 1980px){
+
 }
