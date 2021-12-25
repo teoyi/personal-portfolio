@@ -41,6 +41,12 @@
 /* Main Content */
 .aboutImageMobile{
     display:none;
+    height: 250px; 
+    width: 250px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px 0px;
 }
 .imgWrapper{
     position: relative;
@@ -105,6 +111,35 @@
     }
     .aboutImageMobile{
         display: block;
+        height: 200px;
+        width: 200px;
+        
+    }
+    .mainText{
+        position: static; 
+        margin-left: 0 ; 
+        text-align: center;
+        font-size: 22vw;
+    }
+    .bottomText{
+        width: 70%;
+    }
+    .title{ 
+        font-size: 4vw;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;;
+    }
+    .contentWrapper{ 
+        margin-top: 35px;
+    }
+    .techExp li:nth-child(odd){
+        font-size: 3.5vw;
+    }
+    .techExp li:nth-child(even){
+        font-size: 7vw;
     }
 }
 /* 481px — 768px: iPads, Tablets */
@@ -114,6 +149,29 @@
     }
     .aboutImageMobile{
         display: block;
+    }
+    .bottomText{
+        width: 70%;
+    }
+    .mainText{
+        position: static; 
+        margin-left: 0 ; 
+        text-align: center;
+        font-size: 178px;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;;
+    }
+    .contentWrapper{ 
+        margin-top: 35px;
+    }
+    .techExp li:nth-child(odd){
+        font-size: 2vw;
+    }
+    .techExp li:nth-child(even){
+        font-size: 5vw;
     }
 }
 /* 769px — 1024px: Small screens, laptops */
