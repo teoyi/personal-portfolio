@@ -18,7 +18,7 @@
 }
 /* ABOUT */
 .mainText{
-    font-size: 282px;
+    font-size: 228px;
     font-family: 'Manrope B';
     position: absolute;
     top: 0;
@@ -29,10 +29,11 @@
 /* Self Image */
 .aboutImage1{
     position: relative;
-    width: 421px;
-    height: 500px;
+    width: 351px;
+    height: 417px;
     overflow: hidden;
     border-radius: 10px;
+    margin-top: 50px;
     left: 0;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px 0px;
     /* cursor: pointer; */
@@ -53,9 +54,10 @@
 }
 
 .title{
-    font-size: 2.5vw;
+    font-size: 32px;
     margin-bottom: 13px;
     font-family: 'Manrope B';
+    margin-top: 92px;
     /* text-decoration: underline; */
 }
 
@@ -88,11 +90,11 @@
     /* margin-left: 20px; */
 }
 .techExp li:nth-child(odd){
-    font-size: 1.6vw;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 .techExp li:nth-child(even){
-    font-size: 3vw;
+    font-size: 39px;
     /* margin-left: 20px; */
 }
 
