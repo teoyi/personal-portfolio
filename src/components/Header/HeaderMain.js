@@ -129,9 +129,9 @@ const Header = () => {
                             </a>
                         </Link>
                         <div className={classes.hrLine}></div>
-                        <a href="#" className={classes.navSocials}><FaInstagramSquare size="2rem" /></a>
-                        <a href="#" className={classes.navSocials}><FaGithubSquare size="2rem" /></a>
-                        <a href='#' className={classes.navSocials}><FaLinkedin size="2rem" /></a>
+                        <a href="https://www.instagram.com/yipeng_/" target="_blank" rel="noopener noreferrer" className={classes.navSocials}><FaInstagramSquare size="2rem" /></a>
+                        <a href="https://github.com/teoyi" rel="noopener noreferrer" target="_blank" className={classes.navSocials}><FaGithubSquare size="2rem" /></a>
+                        <a href='https://www.linkedin.com/in/luketeo/' target="_blank" rel="noopener noreferrer" className={classes.navSocials}><FaLinkedin size="2rem" /></a>
                     </div>
                         
                 </li>
