@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-        <meta property="og:image" content={thumbnail} />
+        <meta property="og:image" content="https://luketeodev.com/images/thumbnail.png" />
       </Head>
       <Component {...pageProps} />
     </>
