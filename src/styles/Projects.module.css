@@ -31,6 +31,7 @@
     flex-direction: row-reverse; 
     justify-content: center;
     align-items: center;
+    text-align: right;
 }
 
 .project3{ 
@@ -66,6 +67,7 @@
     }
     .project2{
         flex-direction: column;
+        text-align: left;
     }
     .project3{
         flex-direction: column;
@@ -96,6 +98,7 @@
     }
     .project2{
         flex-direction: column;
+        text-align: left;
     }
     .project3{
         flex-direction: column;
@@ -120,6 +123,7 @@
     }
     .project2{
         flex-direction: column;
+        text-align: left;
     }
     .project3{
         flex-direction: column;

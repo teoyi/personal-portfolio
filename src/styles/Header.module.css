@@ -61,10 +61,6 @@
     margin: 20px 0px;
     font-size: 93px;
 }
-.hoverActivated{
-    /* background-color: red; */
-    /* width: 100%; */
-}
 
 .marquee_text{
     margin: 0 50px;
@@ -106,6 +102,7 @@
 }
 
 
+
 /* 320px — 480px: Mobile devices */
 /* 481px — 768px: iPads, Tablets */
 /* 769px — 1024px: Small screens, laptops */
@@ -132,6 +129,12 @@
     .navLink_contactBtn{
         margin: 0;
     }
+    .marqWrapper{
+        display:none;
+    }
+    .hide{
+        display: block !important;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -144,10 +147,22 @@
     .navLink{
         font-size: 68px;
     }
+    .marqWrapper{
+        display:none;
+    }
+    .hide{
+        display: block !important;
+    }
+    .navMarquee{
+        font-size: 68px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .navLink{
+        font-size: 70px;
+    }
+    .navMarquee{
         font-size: 70px;
     }
 }
@@ -156,10 +171,16 @@
     .navLink{
         font-size: 80px;
     }
+    .navMarquee{
+        font-size: 80px;
+    }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1440px){
     .navLink{
+        font-size: 80px;
+    }
+    .navMarquee{
         font-size: 80px;
     }
 }

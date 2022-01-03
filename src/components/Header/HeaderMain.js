@@ -14,6 +14,7 @@ const Header = () => {
 
     const handleToggle = () => {
         setNavbarOpen(prev => !prev);
+        console.log('clicked');
     }
     
 
@@ -25,33 +26,35 @@ const Header = () => {
                     <div 
                         onMouseEnter={() => setHoverActiveHome(true)} 
                         onMouseLeave={() => setHoverActiveHome(false)}
-                        className={hoverActiveHome ? classes.hoverActivated : ""}
+                        // className={hoverActiveHome ? classes.hoverActivated : ""}
                     >
                         <Link href="#landing">
                             <a className={`${classes.navLink} ${hoverActiveHome ? classes.hide : classes.show}`} onClick={handleToggle}>
                                 HOME
                             </a>
                         </Link>
-                        <Link href="#landing" passHref={true}>
-                            <a className={`${classes.navMarquee} ${hoverActiveHome ? classes.show : classes.hide}`} onClick={handleToggle}>
-                                <Marquee speed="100" gradient={false} delay="0" >
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                    <div className={classes.marquee_text}>HOME</div>
-                                </Marquee>
-                            </a>
-                        </Link>
+                        <div className={classes.marqWrapper}>
+                            <Link href="#landing" passHref={true}>
+                                <a className={`${classes.navMarquee} ${hoverActiveHome ? classes.show : classes.hide}`} onClick={handleToggle}>
+                                    <Marquee speed="100" gradient={false} delay="0" >
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                        <div className={classes.marquee_text}>HOME</div>
+                                    </Marquee>
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -65,26 +68,28 @@ const Header = () => {
                                 ABOUT
                             </a>
                         </Link>
-                        <Link href="#about" passHref={true}>
-                            <a className={`${classes.navMarquee} ${hoverActiveAbout ? classes.show : classes.hide}`} onClick={handleToggle}>
-                                <Marquee speed="100" gradient={false} delay="0" >
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                    <div className={classes.marquee_text}>ABOUT</div>
-                                </Marquee>
-                            </a>
-                        </Link>
+                        <div className={classes.marqWrapper}>
+                            <Link href="#about" passHref={true} className={classes.marqLink}>
+                                <a className={`${classes.navMarquee} ${hoverActiveAbout ? classes.show : classes.hide}`} onClick={handleToggle}>
+                                    <Marquee speed="100" gradient={false} delay="0" >
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                        <div className={classes.marquee_text}>ABOUT</div>
+                                    </Marquee>
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </li>
                 {/* <li><Link href="#timeline"><a className={classes.navLink} onClick={handleToggle}>TIMELINE</a></Link></li> */}
@@ -99,26 +104,28 @@ const Header = () => {
                                 PROJECTS
                             </a>
                         </Link>
-                        <Link href="#projects" passHref={true}>
-                            <a className={`${classes.navMarquee} ${hoverActiveProjects ? classes.show : classes.hide}`} onClick={handleToggle}>
-                                <Marquee speed="100" gradient={false} delay="0" >
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                    <div className={classes.marquee_text}>PROJECTS</div>
-                                </Marquee>
-                            </a>
-                        </Link>
+                        <div className={classes.marqWrapper}>
+                            <Link href="#projects" passHref={true} className={classes.marqLink}>
+                                <a className={`${classes.navMarquee} ${hoverActiveProjects ? classes.show : classes.hide}`} onClick={handleToggle}>
+                                    <Marquee speed="100" gradient={false} delay="0" >
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                        <div className={classes.marquee_text}>PROJECTS</div>
+                                    </Marquee>
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </li>
                 <li>
