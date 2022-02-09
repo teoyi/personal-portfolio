@@ -2,18 +2,21 @@ import classes from '../../styles/Projects.module.css'
 import Image from 'next/image'
 import toolbox from '../../../public/static/images/toolbox.png'
 import comingSoon from '../../../public/static/images/coming_soon.png'
+import fxjournal from '../../../public/static/images/fxjournal_thumb.png'
 
 const Projects = () => {
     return ( 
         <section id="projects" className={classes.projects}>
             <div className={classes.title}>PROJECTS</div>
             <div className={classes.project1}>
-                <div className={classes.image}>
-                    <Image src={comingSoon} alt="project" />
+                <div className={classes.image1}>
+                    <Image src={fxjournal} alt="fxjournal project" />
                 </div>
                 <div className={classes.text}>
-                    <h1>CMS/Social Media</h1>
-                    <p>Standard social media platform that enables users to interact with one another and create their own posts</p>
+                    <h1>fxjournal</h1>
+                    <p>Status: Under Construction</p>
+                    <p>A one stop journaling site for traders to note down their trades for further analysis.</p>
+                    <p>Stack: MERN</p>
                 </div>
             </div>
             <div className={classes.project2}>

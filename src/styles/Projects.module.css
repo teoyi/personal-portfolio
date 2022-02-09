@@ -1,146 +1,149 @@
-.projects{ 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.title{ 
-    font-family: 'Manrope B';
-    font-size: 228px;
+.title {
+  font-family: "Manrope B";
+  font-size: 13vw;
 }
 
-.image{
-    height: 373px; 
-    width: 530px;
-    border-radius: 25px;
-    overflow: hidden;
-    margin: 100px 50px;
+.image {
+  height: 373px;
+  width: 530px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 100px 50px;
 }
 
-.project1{ 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
+.image1 {
+  height: 265px;
+  width: 530px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 100px 50px;
 }
 
-.project2{ 
-    display: flex; 
-    flex-direction: row-reverse; 
-    justify-content: center;
-    align-items: center;
-    text-align: right;
+.project1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.project3{ 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
+.project2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
 }
 
-.text{ 
-    margin: 50px;
-    width: 500px;
-    font-family: 'Manrope B';
+.project3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.text h1{
-    font-size: 40px;
+.text {
+  margin: 50px;
+  width: 500px;
+  font-family: "Manrope B";
 }
 
-.text p{ 
-    font-size: 20px;
+.text h1 {
+  font-size: 40px;
 }
 
+.text p {
+  font-size: 20px;
+}
 
 /* 320px — 480px: Mobile devices */
-@media only screen and (min-width: 320px) and (max-width: 480px){
-    .title{
-        font-size: 15vw;
-        margin-top: 30px;
-    }
-    .project1{
-        flex-direction: column;
-    }
-    .project2{
-        flex-direction: column;
-        text-align: left;
-    }
-    .project3{
-        flex-direction: column;
-    }
-    .image{
-        margin: 20px;
-        height: 212px; 
-        width: 300px;
-
-    }
-    .text{
-        width: 281px;
-    }
-    .text h1{
-        font-size: 5vw;
-    }
-    .text p{ 
-        font-size: 4vw;
-    }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .title {
+    font-size: 15vw;
+    margin-top: 30px;
+  }
+  .project1 {
+    flex-direction: column;
+  }
+  .project2 {
+    flex-direction: column;
+    text-align: left;
+  }
+  .project3 {
+    flex-direction: column;
+  }
+  .image {
+    margin: 20px;
+    height: 212px;
+    width: 300px;
+  }
+  .text {
+    width: 281px;
+  }
+  .text h1 {
+    font-size: 5vw;
+  }
+  .text p {
+    font-size: 4vw;
+  }
 }
 /* 481px — 768px: iPads, Tablets */
-@media only screen and (min-width: 481px) and (max-width: 768px){
-    .title{
-        font-size: 115px;
-    }
-    .project1{
-        flex-direction: column;
-    }
-    .project2{
-        flex-direction: column;
-        text-align: left;
-    }
-    .project3{
-        flex-direction: column;
-    }
-    .image{
-        margin: 20px;
-        height: 424px; 
-        width: 600px;
-
-    }
-    .text{
-        width: 530px;
-    }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .title {
+    font-size: 115px;
+  }
+  .project1 {
+    flex-direction: column;
+  }
+  .project2 {
+    flex-direction: column;
+    text-align: left;
+  }
+  .project3 {
+    flex-direction: column;
+  }
+  .image {
+    margin: 20px;
+    height: 424px;
+    width: 600px;
+  }
+  .text {
+    width: 530px;
+  }
 }
 /* 769px — 1024px: Small screens, laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px){
-    .title{
-        font-size: 158px;
-    }
-    .project1{
-        flex-direction: column;
-    }
-    .project2{
-        flex-direction: column;
-        text-align: left;
-    }
-    .project3{
-        flex-direction: column;
-    }
-    .image{
-        margin: 20px;
-    }
-    .text{
-        width: 666px;
-    }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 158px;
+  }
+  .project1 {
+    flex-direction: column;
+  }
+  .project2 {
+    flex-direction: column;
+    text-align: left;
+  }
+  .project3 {
+    flex-direction: column;
+  }
+  .image {
+    margin: 20px;
+  }
+  .text {
+    width: 666px;
+  }
 }
 /* 1025px — 1200px: Desktops, large screens */
-@media only screen and (min-width: 1025px) and (max-width: 1200px){
-
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 }
 
 /* 1201px and more —  Extra large screens, TV -> current original styling is for that  */
-@media only screen and (min-width: 1980px){
-
+@media only screen and (min-width: 1980px) {
 }
