@@ -21,10 +21,25 @@
 }
 
 .contactContent {
-  font-size: 1.9vw;
+  font-size: 1.4vw;
   /* margin: 0 10vw; */
   text-align: center;
   margin: 0 16vw;
+  margin-bottom: 20px;
+}
+.contactContent1 {
+  font-size: 1.9vw;
+  /* margin: 0 10vw; */
+  text-align: center;
+  margin: 5px 16vw;
+}
+.social {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* 320px — 480px: Mobile devices */

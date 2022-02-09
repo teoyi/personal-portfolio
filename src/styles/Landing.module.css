@@ -16,6 +16,9 @@
   /* margin-left: 20px; */
 }
 
+.separator {
+  font-size: 7vw;
+}
 .nameArea {
   display: flex;
   flex-direction: row;
@@ -43,6 +46,7 @@
   /* writing-mode: vertical-lr; */
   font-family: "Manrope B";
   font-size: 1.7vw;
+  margin-top: 10px;
 }
 
 .firstName {
