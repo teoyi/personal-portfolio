@@ -142,23 +142,34 @@
 /* 769px — 1024px: Small screens, laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .title {
-    font-size: 158px;
+    font-size: 10vw;
+    margin-top: 30px;
   }
-  .project1 {
-    flex-direction: column;
-  }
-  .project2 {
-    flex-direction: column;
-    text-align: left;
-  }
+  .project1,
+  .project2,
   .project3 {
-    flex-direction: column;
+    width: 100%;
+  }
+  .image1 {
+    height: 202px;
+    width: 407px;
+    margin: 25px;
   }
   .image {
     margin: 20px;
+    height: 265px;
+    width: 407px;
   }
   .text {
-    width: 666px;
+    width: 380px;
+    margin: 25px;
+    margin-bottom: 30px;
+  }
+  .text h1 {
+    font-size: 25px;
+  }
+  .text p {
+    font-size: 15px;
   }
 }
 /* 1025px — 1200px: Desktops, large screens */
