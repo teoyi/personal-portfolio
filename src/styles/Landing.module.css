@@ -19,6 +19,7 @@
 .separator {
   font-size: 7vw;
 }
+
 .nameArea {
   display: flex;
   flex-direction: row;
@@ -46,7 +47,7 @@
   /* writing-mode: vertical-lr; */
   font-family: "Manrope B";
   font-size: 1.7vw;
-  margin-top: 10px;
+  margin-top: 0.78125vw;
 }
 
 .firstName {
@@ -117,6 +118,17 @@
     margin-left: 0;
   }
   .marquee {
+    display: none;
+  }
+  .nameArea {
+    flex-direction: column;
+    font-size: 100px;
+    line-height: 85px;
+  }
+  .subText {
+    display: none;
+  }
+  .separator {
     display: none;
   }
 }

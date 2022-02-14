@@ -6,14 +6,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #ecebe2;
   color: #333335;
-  overflow-x: hidden;;
+  overflow-x: hidden;
 }
 
 html {
   height: 100%;
 }
 
-body { 
+body {
   min-height: 100%;
   /* overflow-x: hidden; */
   width: 100%;
