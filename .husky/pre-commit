@@ -1,4 +1,32 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint
+# Check for types error 
+yarn check-types || 
+(
+    echo 'Types check failed. View TS errors from within your console. Fix the error and try to commit again.';
+    false; 
+)
+
+# Check for Prettier formatting error 
+yarn check-format || 
+(
+    echo 'Format check failed. Run yarn format, add the necessary changes and commit again.';
+    false; 
+)
+
+# Check for ESLint error 
+yarn check-lint || 
+(
+    echo 'ESLint check failed. Make the required changes listed above, add the aforementioned changes and commit again.';
+    false; 
+)
+
+# Check for Next lint error 
+yarn lint || 
+(
+    echo 'Next Lint check failed. Make the required changes listed above, add the aforementioned changes and commit again.';
+    false; 
+)
+# If everything passes
+echo 'Awesome! The code looks great to me, you are safe to make a commit!'
