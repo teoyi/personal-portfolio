@@ -9,6 +9,7 @@ yarn check-types ||
     false; 
 )
 
+echo '✔ ✔ ✔ Type check passed!'
 echo '➡️ ➡️ ➡️  Checking for formatting ...'
 
 # Check for Prettier formatting error 
@@ -18,6 +19,9 @@ yarn check-format ||
     false; 
 )
 
+echo '✔ ✔ ✔ Format check passed!'
+echo '➡️ ➡️ ➡️  Checking for ESlint ...'
+
 # Check for ESLint error 
 yarn check-lint || 
 (
@@ -25,14 +29,17 @@ yarn check-lint ||
     false; 
 )
 
-echo '➡️ ➡️ ➡️  Checking for lints ...'
+echo '✔ ✔ ✔ ESLint check passed!'
+echo '➡️ ➡️ ➡️  Checking for Nextlint ...'
 
 # Check for Next lint error 
 yarn lint || 
 (
-    echo '✖ ✖ ✖  Next Lint check failed. Make the required changes listed above, add the aforementioned changes and commit again.';
+    echo '✖ ✖ ✖  Nextlint check failed. Make the required changes listed above, add the aforementioned changes and commit again.';
     false; 
 )
+
+echo '✔ ✔ ✔ Nextlint check passed!'
 
 # If everything passes
 echo '✔ ✔ ✔ Awesome! The code looks great to me, you are safe to make a commit!'
