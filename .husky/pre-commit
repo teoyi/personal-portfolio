@@ -42,4 +42,4 @@ yarn lint ||
 echo '✔ ✔ ✔  Nextlint check passed!'
 
 # If everything passes
-echo '✔ ✔ ✔ Awesome! The code looks great to me, you are safe to make a commit!'
+echo '✔ ✔ ✔  Awesome! The code looks great to me, you are safe to make a commit!'
