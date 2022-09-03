@@ -4,7 +4,9 @@ import Layout from "../common/layouts/standard";
 const Home: NextPage = () => {
     return (
         <Layout>
-            <div className="text-8xl font-zallord">LukeTeo</div>
+            <div className="bg-red-500 h-nav-screen text-8xl font-zallord">
+                LukeTeo
+            </div>
         </Layout>
     );
 };

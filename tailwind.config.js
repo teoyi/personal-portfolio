@@ -9,6 +9,10 @@ module.exports = {
             fontFamily: {
                 zallord: "Zallord",
             },
+            height: {
+                nav: "80px",
+                "nav-screen": "calc(100% - 80px)",
+            },
         },
     },
     plugins: [],
