@@ -4,9 +4,12 @@ module.exports = {
         "./src/pages/**/*.{js,ts,jsx,tsx}",
         "./src/common/**/*.{js,ts,jsx,tsx}",
     ],
-
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                zallord: "Zallord",
+            },
+        },
     },
     plugins: [],
 };
