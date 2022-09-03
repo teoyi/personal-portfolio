@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
+import Layout from "../common/layouts/standard";
 
 const Home: NextPage = () => {
-    return <div className="bg-red-500 font-zallord text-6xl">Hello there</div>;
+    return (
+        <Layout>
+            <div className="text-8xl font-zallord">LukeTeo</div>
+        </Layout>
+    );
 };
 
 export default Home;
