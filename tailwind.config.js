@@ -11,7 +11,7 @@ module.exports = {
             },
             height: {
                 nav: "80px",
-                "nav-screen": "calc(100% - 80px)",
+                fscreen: "calc(100vh - 80px)",
             },
         },
     },
