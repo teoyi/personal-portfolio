@@ -9,6 +9,10 @@ module.exports = {
             fontFamily: {
                 zallord: "Zallord",
             },
+            fontSize: {
+                "14xl": "14rem",
+                "16xl": "16rem",
+            },
             height: {
                 nav: "80px",
                 fscreen: "calc(100vh - 80px)",

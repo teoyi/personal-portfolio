@@ -3,11 +3,15 @@ import Layout from "../common/layouts/standard";
 
 const Home: NextPage = () => {
     return (
-        <Layout>
-            <div className="bg-red-500 h-nav-screen text-8xl font-zallord">
-                LukeTeo
-            </div>
-        </Layout>
+        <section className="h-screen w-full bg-black">
+            <Layout>
+                <div className="h-fscreen w-full flex justify-center items-center">
+                    <h1 className="text-8xl xl:text-16xl text-white font-zallord">
+                        LukeTeo
+                    </h1>
+                </div>
+            </Layout>
+        </section>
     );
 };
 
