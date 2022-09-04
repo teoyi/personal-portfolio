@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../footer";
 import Header from "../../header";
 
 interface ILayoutProps {
@@ -8,11 +7,11 @@ interface ILayoutProps {
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
     return (
-        <React.Fragment>
+        <div className="overflow-x-hidden">
             <Header />
             <main>{children}</main>
-            <Footer />
-        </React.Fragment>
+            {/* <Footer /> */}
+        </div>
     );
 };
 
