@@ -21,6 +21,9 @@ module.exports = {
             colors: {
                 "off-black": "#1E1C1C",
             },
+            backgroundImage: {
+                landing: "url('../public/images/dark50-landing.png')",
+            },
         },
     },
     plugins: [],
