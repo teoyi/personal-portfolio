@@ -14,7 +14,7 @@ const Header = () => {
     // const navHeight =
     return (
         <nav
-            className={`sticky top-0 w-full flex text-white flex-row justify-between items-center px-10 h-nav ${
+            className={`sticky top-0 w-full flex text-white flex-row justify-between items-center px-10 z-50 h-nav ${
                 scroll ? "bg-red-200" : "bg-transparent"
             }`}
         >
