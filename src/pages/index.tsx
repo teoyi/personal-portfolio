@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import LandingImage from "../../public/images/dark50-landing.png";
+import LandingImage from "../../public/images/dark70-landing.png";
 import Layout from "../common/layouts/standard";
 
 const Home: NextPage = () => {
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
             />
             <Layout>
                 <div className="z-0 h-fscreen w-full flex justify-center items-center">
-                    <h1 className="z-0 text-8xl md:text-12xl xl:text-16xl text-white font-zallord cursor-default">
+                    <h1 className="z-0 text-8xl md:text-12xl xl:text-16xl text-white font-zallord cursor-default -mt-[80px]">
                         LukeTeo
                     </h1>
                 </div>
