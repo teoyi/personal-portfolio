@@ -8,6 +8,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 zallord: "Zallord",
+                "noto-sans-jp": ["Noto Sans JP", "sans-serif"],
             },
             fontSize: {
                 "12xl": "12rem",
@@ -20,6 +21,8 @@ module.exports = {
             },
             colors: {
                 "off-black": "#1E1C1C",
+                "test-black": "#000",
+                "test-white": "#fff",
             },
             backgroundImage: {
                 landing: "url('../public/images/dark50-landing.png')",
