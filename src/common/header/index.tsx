@@ -14,8 +14,8 @@ const Header = () => {
     // const navHeight =
     return (
         <nav
-            className={`sticky top-0 w-full flex text-white flex-row justify-between items-center px-10 z-50 h-nav ${
-                scroll ? "bg-red-200" : "bg-transparent"
+            className={`fixed top-0 w-full flex text-white flex-row justify-between items-center px-10 z-50 h-nav ${
+                scroll ? "bg-off-black" : "bg-transparent"
             }`}
         >
             <Link href="/">
@@ -32,7 +32,7 @@ const Header = () => {
                     <a>Projects</a>
                 </Link>
             </ul>
-            <div className="block z-50 md:hidden">
+            <div className="block -mr-[12px] z-50 md:hidden">
                 <Hamburger toggled={showMenu} toggle={setShowMenu} size={25} />
             </div>
             <div
