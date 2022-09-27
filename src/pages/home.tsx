@@ -10,6 +10,7 @@ const Home2: NextPage = () => {
                         autoPlay
                         muted
                         loop
+                        playsInline
                     >
                         <source
                             src={`./videos/abstract-colors.mp4`}
