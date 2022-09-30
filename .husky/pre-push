@@ -4,6 +4,7 @@
 yarn build || 
 (
     echo '✖ ✖ ✖  Your current build has failed. View the errors above to see why.'
+    false
 )
 
 echo '✔ ✔ ✔  Build complete, build check success. Pushing code to remote!'
