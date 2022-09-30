@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
     return (
-        <section className="h-screen w-full bg-off-black">
+        <section className="h-screen w-full">
             <div className="z-0 h-screen relative w-full flex justify-start items-end">
                 <video
                     className="h-screen w-full object-cover"

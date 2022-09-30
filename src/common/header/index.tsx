@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <nav
             className={`fixed top-0 w-full flex text-white flex-row justify-between items-center px-10 z-50 h-nav ${
-                scroll ? "bg-off-black" : "bg-transparent"
+                scroll ? "bg-black" : "bg-transparent"
             }`}
         >
             <Link href="/">
