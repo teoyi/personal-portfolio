@@ -15,6 +15,7 @@ module.exports = {
                 "12xl": "12rem",
                 "14xl": "14rem",
                 "16xl": "16rem",
+                "30xl": "30rem",
             },
             height: {
                 nav: "80px",
