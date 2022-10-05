@@ -20,9 +20,9 @@ const Hero: React.FC = () => {
                     <span className="block md:hidden">
                         Luke
                         <br />
-                        Teo
+                        Teo.
                     </span>
-                    <span className="hidden md:block">Luke&nbsp;Teo</span>
+                    <span className="hidden md:block">Luke&nbsp;Teo.</span>
                 </h1>
             </div>
         </section>
