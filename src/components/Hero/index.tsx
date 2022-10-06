@@ -3,7 +3,7 @@ import React from "react";
 const Hero: React.FC = () => {
     return (
         <section className="h-screen w-full font-noto-sans-jp">
-            <div className="z-0 h-screen relative w-full flex justify-start items-end">
+            <div className="relative z-0 flex h-screen w-full items-end justify-start">
                 <video
                     className="h-screen w-full object-cover"
                     autoPlay
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
                         type="video/mp4"
                     />
                 </video>
-                <h1 className="absolute inset-0 flex items-end z-0 text-8xl px-5 py-14 lg:text-9xl 2xl:text-12xl bg-black h-screen select-none w-full text-white cursor-default font-noto-sans-jp font-semibold mix-blend-screen">
+                <h1 className="absolute inset-0 z-0 flex h-screen w-full cursor-default select-none items-end bg-black px-5 py-14 font-noto-sans-jp text-8xl font-semibold text-white mix-blend-screen lg:text-9xl 2xl:text-12xl">
                     <span className="block md:hidden">
                         Luke
                         <br />

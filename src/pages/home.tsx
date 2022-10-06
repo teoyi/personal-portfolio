@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Layout from "../common/layouts/standard";
-import { Hero, Menu } from "../components";
+import { About, Hero, Menu } from "../components";
 const Home2: NextPage = () => {
     return (
         <Layout>
             <Hero />
             <Menu />
-            {/* <About /> */}
+            <About />
         </Layout>
     );
 };

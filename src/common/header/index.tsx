@@ -14,14 +14,14 @@ const Header = () => {
     // const navHeight =
     return (
         <nav
-            className={`fixed top-0 w-full flex text-white flex-row justify-between items-center px-10 z-50 h-nav ${
+            className={`fixed top-0 z-50 flex h-nav w-full flex-row items-center justify-between px-10 text-white ${
                 scroll ? "bg-black" : "bg-transparent"
             }`}
         >
             <Link href="/">
-                <a className="font-bold text-2xl">LT</a>
+                <a className="text-2xl font-bold">LT</a>
             </Link>
-            <ul className="hidden md:flex flex-row items-center gap-10">
+            <ul className="hidden flex-row items-center gap-10 md:flex">
                 <Link href="/">
                     <a>Home</a>
                 </Link>
@@ -32,11 +32,11 @@ const Header = () => {
                     <a>Projects</a>
                 </Link>
             </ul>
-            <div className="block -mr-[12px] z-50 md:hidden">
+            <div className="z-50 -mr-[12px] block md:hidden">
                 <Hamburger toggled={showMenu} toggle={setShowMenu} size={25} />
             </div>
             <div
-                className={`md:hidden absolute h-screen w-full top-0 left-0 bg-black flex flex-col justify-center items-center text-4xl gap-10 ease-in-out duration-300 transition-all ${
+                className={`absolute top-0 left-0 flex h-screen w-full flex-col items-center justify-center gap-10 bg-black text-4xl transition-all duration-300 ease-in-out md:hidden ${
                     showMenu ? "" : "translate-x-full"
                 }`}
             >

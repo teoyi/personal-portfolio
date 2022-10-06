@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 const Home: NextPage = () => {
     return (
-        <div className="bg-off-black h-screen w-full text-white text-xl flex items-center justify-center text-center font-semibold font-noto-sans-jp p-5">
+        <div className="flex h-screen w-full items-center justify-center bg-off-black p-5 text-center font-noto-sans-jp text-xl font-semibold text-white">
             This site is currently undergoing huge changes! Do check back at a
             later time!
         </div>
